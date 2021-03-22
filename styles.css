@@ -8,23 +8,13 @@ body{
 header{
     display: flex;
     justify-content: center;
-    align-content: center;
+    background-color: rgb(71,85,94);
 }
-header div{
-    display: flex;
-    align-content: space-between;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #5c0013;
-    color:white;
-    text-align: center;
-    margin: 10px auto;
+
+header img{
+    width: 200px;
 }
-header h1{
-    font-size:xx-large;
-}
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -49,13 +39,13 @@ nav{
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;
-    background-color: #5c0013; 
+    background-color: #1d2226; 
     border: 2px solid black;
 }
 .menu:hover{
-    background-color:#be0027;
+    background-color:#55616b;
     color: white;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 section{
     display: inline-block;
@@ -78,12 +68,13 @@ section{
 .bar ul{
     padding-bottom: 3px;
     padding-top: 3px;
-    background-color: #5c0013;
+    background-color: #1d2226;
     color: white;
     height: auto;
 }
 .bar ul li a{
     color: white;
+    text-decoration: none;
 }
 li img{
     height: 20px;
