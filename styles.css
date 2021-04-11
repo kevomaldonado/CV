@@ -11,20 +11,17 @@ header{
 header img{
     width: 200px;
 }
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
 nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .menu{
     width: 150px;
-    height: 25px;
+    height: 20px;
     color: #1498d5;
     padding: 15px 0;
     text-align: center;
@@ -38,7 +35,9 @@ nav{
     float: left;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    border: 1px solid #1498d5;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #1498d5;
 }
 .menu img{
     height: 30px;
@@ -49,49 +48,80 @@ nav{
 }
 section{
     display: inline-block;
+    margin: 10px 10px;
 }
 article{
     position: relative;
     width: 100%;
-    max-width: 70%;
-    margin-left: 15%;
+    margin-top: 15px;
 }
-.cont li{
-    width: 400px;
-    position: relative;
-    right: 0;
-    border: 2px solid black;
-}
-.bar li, .bar li b{
-    padding-bottom: 5px;
-    list-style-type: none;
-    width: 20%;
-    height: auto;
-    display: inline;
-    padding-right: 10px;
-    font-size:medium;
-    background-color: #1498d5;
-}
+/*Pie de página*/
 footer{
     background-color: #1498d5;
     display:grid;
     grid-template-columns: repeat(2, 50%);
+    height: auto;
+    align-items: center;
+    margin-top: 20px;
 }
-/**/
-.bar ul{
+.bar *{
+    background-color: #1498d5;
+}
+
+/*Parte de contacto*/
+.contacto ul{
     padding-bottom: 3px;
     padding-top: 3px;
-    background-color: #1498d5;
     color: white;
     height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    border-right: 2px solid white;
 }
-.bar ul li a{
+.contacto li{
+    padding-bottom: 5px;
+    list-style-type: none;
+    height: auto;
+    padding-right: 10px;
+    font-size:medium;
+    background-color: #1498d5;
+    margin:15px;
+}
+.contacto li:first-of-type{
+    font-weight: bolder;
+    font-size: larger;
+}
+.contacto a{
     color: white;
     text-decoration: none;
-    background-color: #1498d5;
 }
-li img{
-    height: 30px;
+.contacto img{
+    width: 25px;
+    vertical-align: middle;    
+}
+/*Parte de redes*/
+.redes ul{
+    margin-left:300px;
+}
+.redes li{
+    padding-bottom: 5px;
+    list-style-type: none;
+    display:inline;
+    height: auto;
+    padding-right: 10px;
+    font-size:medium;
     background-color: #1498d5;
+    margin-right: 20px;
+    color:white;
+}
+.redes li:first-child{
+    display:block;
+    margin-bottom: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+.redes img{
+    height: 50px;
 }
 
