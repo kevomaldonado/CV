@@ -1,14 +1,11 @@
-html{
+*{
     background-color: white;
     font-family: "Lato", sans-serif;
-}
-body{
     margin: 0;
 }
 header{
     display: flex;
     justify-content: center;
-    background-color: rgb(71,85,94);
 }
 
 header img{
@@ -23,64 +20,35 @@ ul{
 nav{
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 .menu{
-    width: 22vw;
-    min-width: 5vw;
-    color: white;
+    width: 150px;
+    height: 25px;
+    color: #1498d5;
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
     display: inline;
     font-size: 16px;
-    margin: 5px 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
     transition-duration: 0.4s;
     cursor: pointer;
     float: left;
-    background-color: #1d2226; 
-    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid #1498d5;
+}
+.menu img{
+    height: 30px;
 }
 .menu:hover{
-    background-color:#55616b;
+    background-color:#1498d5;
     color: white;
-    border: 2px solid black;
 }
 section{
     display: inline-block;
-}
-.cont li{
-    width: 400px;
-    position: relative;
-    right: 0;
-    border: 2px solid black;
-}
-.bar li{
-    padding-bottom: 5px;
-    list-style-type: none;
-    width: 20%;
-    height: auto;
-    display: inline;
-    padding-right: 10px;
-    font-size:medium;
-}
-.bar ul{
-    padding-bottom: 3px;
-    padding-top: 3px;
-    background-color: #1d2226;
-    color: white;
-    height: auto;
-}
-.bar ul li a{
-    color: white;
-    text-decoration: none;
-}
-li img{
-    height: 20px;
-}
-.bar li:first-of-type{
-padding-right: 10px;
 }
 article{
     position: relative;
@@ -88,6 +56,42 @@ article{
     max-width: 70%;
     margin-left: 15%;
 }
-.aboutme img{
-    margin-left: 0;
+.cont li{
+    width: 400px;
+    position: relative;
+    right: 0;
+    border: 2px solid black;
 }
+.bar li, .bar li b{
+    padding-bottom: 5px;
+    list-style-type: none;
+    width: 20%;
+    height: auto;
+    display: inline;
+    padding-right: 10px;
+    font-size:medium;
+    background-color: #1498d5;
+}
+footer{
+    background-color: #1498d5;
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+}
+/**/
+.bar ul{
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: #1498d5;
+    color: white;
+    height: auto;
+}
+.bar ul li a{
+    color: white;
+    text-decoration: none;
+    background-color: #1498d5;
+}
+li img{
+    height: 30px;
+    background-color: #1498d5;
+}
+
