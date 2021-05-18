@@ -3,32 +3,9 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+    color : #dbe8d4;
 }
-header{
-    display: flex;
-    justify-content: center;
-    width : 100%;
-}
-.welcoming h2{
-    margin-bottom: 20px;
-}
-.info{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.info img{
-    margin : 20px;
-    width: 350px;
-    border-radius: 50%;
-}
-.info p{
-    margin : 20px;
-    width : 85%;
-    font-size: 25px;
-    text-align: justify;
-}
+/*Menu*/
 .menu{
     position : sticky;
     top : 0;
@@ -39,6 +16,7 @@ header{
     flex-flow: row;
     justify-content: center;
     width : 100%;
+    z-index: 100;
 }
 
 .boton{
@@ -56,6 +34,7 @@ header{
     background-color:#dbe8d4;
     color: #222733;
 }
+/*titulo con nombre*/
 .name{
     color : #dbe8d4;
     font-size:7vw;
@@ -64,6 +43,42 @@ header{
     text-align: center;
     text-transform: uppercase;
     line-height: 1.25;
+}
+.welcoming h2{
+    margin-bottom: 20px;
+    font-size: 3vw;
+}
+.info, .proyectos, .skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills{
+    justify-content: space-around;
+    flex-direction: row;
+}
+.info img{
+    margin : 20px;
+    width: 350px;
+    border-radius: 50%;
+}
+.proyectos img{
+    margin : 20px;
+    width: 450px;
+}
+.info p, .proyectos p{
+    margin : 20px;
+    width : 85%;
+    font-size: 25px;
+    text-align: justify;
+}
+.proyectos p{
+    width : 80%;
+}
+
+.tituloproyecto{
+    font-size: 30px;
 }
 article{
     padding : 10px 15px;
@@ -74,13 +89,18 @@ h2{
     color : #dbe8d4;
     font-size: 2.5vw;
 }
-.welcoming h2{
-    font-size: 3vw;
-}
 p{
     color : #dbe8d4;
     font-size: 2vw;
 }
+
+.subtitle{
+    font-weight: bold;
+}
+.titulo{
+    margin-bottom: 20px;;
+}
+
 .experienceContainer{
     display : flex;
     justify-content: space-evenly;
@@ -88,36 +108,123 @@ p{
 }
 figcaption{
     text-align: center;
+    margin-top: 20px;
 }
 .experienceContainer div{
     width : 100%;
-    height : 300px;
+    height : 250px;
     margin-top:0;
     display : flex;
     align-items: center;
+    background-color: white;
 }
 .experienceContainer div img{
     width:100%;
     margin:auto;
+    background-color: white;
 }
-.experienceContainer figure{
+figcaption{
+    margin-top: :20px;;
+}
+.box{
     width: 250px;
     height: auto;
-    margin : 15px 5px;
-    border : 3px solid #1498d5;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.description{
+    display : flex;
+    top:0;
+    left:0;
+    width : auto;
+    padding : 6px;
+    text-align: justify;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    color:black;
+}
+footer{
+    height : 6vw;
+    background-color: #525e65;
+    display:block;
+}
+footer h2{
+    font-size: 1.5vw;
+    padding-top:10px;
+}
+.redes ul{
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display:flex;
+    justify-content:center;
+}
+.redes li{
+    list-style-type: none;
+    display:inline;
+    height: auto;
+    margin : 15px;
+}
+.redes a, .redes li, .redes ul, footer h2, footer{
+    background-color: #525e65;
+}
+
+.redes img{
+    height: 50px;
+    background-color: #525e65;
 }
 @media only screen and (min-width: 768px){
     header img{
         width: 300px;
     }
-    .info{
+    .info, .proyectos{
         flex-direction: row;
     }
-    .info p{
-        width : 50%
+    .info p, .proyectos p{
+        width : 50%;
     }
 }

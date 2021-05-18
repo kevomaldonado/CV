@@ -6,136 +6,182 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Raleway:wght@300&display=swap" 
+        rel="stylesheet">
 
     </head>
     <body>
         <nav class = "menu">
             <a class= "boton" href="#">Home</a>
+            <a class= "boton" href="#skills">Skills</a>
             <a class= "boton" href="#experience">Experience</a>
             <a class= "boton" href="#projects">Projects</a>
-            <a class= "boton" href="#skills">Skills</a>
-            <a class= "boton" href="#hobbies">Hobbies</a>
+            
         </nav>
         <div class = "name" id = "home">
             Kevin Maldonado
         </div>
         <section>
-            <article id="aboutme" class = "welcoming">
+            <article class = "welcoming">
                 <h2>Welcome to my portfolio</h2>
                 <div class = "info">
                     <img src = "images/pic.jpg">
                     <p class = "about">
-                        Hello, I´m Kevin. I am a mechatronic engineer from La Paz, México.
-                        I lived 7 years in Puebla where I graduated from mechatronic engineer. 
-                        I like puzzles, camping and movies.<span>&#160</span>
+                        Hello, I´m Kevin. I'm a Salesforce Developer under construction in KSquare University. I'm currently 
+                        living in La Paz Mexico, my hometown. Here you'll find the things I have done in my career as a Mechatronic 
+                        engineer and Software Developer.
                     </p>
-                    
+                </div>
+            </article>
+            <article id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class = "hardskills">
+                        <p class = "subtitle">Hard Skills</p>
+                        <p>Java</p>
+                        <p>Apex</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Ladder </p>
+                    </div>
+                    <div class = "softskills">
+                        <p class = "subtitle">Soft Skills</p>
+                        <p>Communication</p>
+                        <p>Adaptability</p>
+                        <p>Teamwork</p>
+                        <p>Fast learner</p>
+                        <p>Emphatic</p>
+                    </div>
                 </div>
             </article>
             <article id="experience">
-                <h2>Experience</h2>
+                <h2 class = "titulo">Experience</h2>
+                
                 <div class = "experienceContainer">
             
-                    <!--<figure>
-                        <div><img src="images/ksquare.png" alt="ksquarelogo"></div>
-                        <figcaption><b>Salesforce Associate Software Engineer</b><br>KSquare University<br>2021</figcaption>
-                        <button class = "open">Open</button>
+                    <figure class = "box">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/ksquare.png" alt="ksquare" >
+                                </div>
+                                <div class="flip-card-back">
+                                    <p class = "description">
+                                        &bull;Training for Salesforce Developer I certification
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        <figcaption>
+                            <b>Salesforce Associate Software Engineer</b><br>KSquare University<br>2021
+                        </figcaption>
                     </figure>
                     
-                    <figure>
-                        <div><img src="images/integra.png" alt="integralogo"></div>
-                        <figcaption><b>Project Engineer / Internship</b><br>Integra Automation<br>2018-2020</figcaption>
+                    <figure class = "box">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/integra.png" alt="integra" >
+                                </div>
+                                <div class="flip-card-back">
+                                    <p class = "description">
+                                        &bull;Designed and built 5+ electrical panels for automated system.
+                                        <br>&bull;Trained maintenance engineers on implemented improvements.
+                                        <br>&bull;Supervised the refurbishment of a hydraulic press.
+                                        <br>&bull;Assembled two kits of Siemens PLC for training.
+                                        <br>&bull;Programmed cameras for quality inspection implementations.
+                                        <br>&bull;Integrated 2 scanners for traceability purposes. Adjusted PLC programs to better
+                                        performance.
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        <figcaption>
+                            <b>Project Engineer / Internship</b><br>Integra Automation<br>2018-2020
+                        </figcaption>
                     </figure>
 
-                    <figure>
-                        <div><img src="images/vw.png" alt="VWLogo"></div>
-                        <figcaption><b>Internship</b><br>Volswagen México<br>2018</figcaption>
+                    <figure class = "box">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/vw.png" alt="vw" >
+                                </div>
+                                <div class="flip-card-back">
+                                    <p class = "description">
+                                        &bull;Participated in the design of a workshop for the development of specific skills for
+                                        the new and current workers of Volkswagen in the rear axle production line.                                        
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        <figcaption>
+                            <b>Internship</b><br>Volswagen México<br>2018
+                        </figcaption>
                     </figure>
 
-                    <figure>
-                        <div><img src="images/tec.png" alt="teclogo"></div>
-                        <figcaption><b>BS. Mechatronics Engineering</b><br>Tecnológico de Monterrey<br>2014-2019</figcaption>
-                    </figure>-->
-
+                    <figure class = "box">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/tec.png" alt="tec" >
+                                </div>
+                                <div class="flip-card-back">
+                                    <p class = "description">
+                                        &bull;Graduated from Mechatronics Engineer and received CENEVAL award for Excellence
+                                        Performance
+                                    </p>
+                                </div>
+                            </div>
+                          </div>
+                        <figcaption>
+                            <b>BS. Mechatronics Engineering</b><br>Tecnológico de Monterrey<br>2014-2019
+                        </figcaption>
+                    </figure>
                 </div>
             </article>
 
             <article id="projects">
                 <h2>My projects</h2>
-                <p>
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                </p>
+                <div class = "proyectos">
+                    <img src = "images/buzon.jpeg">
+                    <p>
+                        <b class = "tituloproyecto">Smart letter-box</b>
+                        <br>Created a system that scans s QR code and receives a letter if valid.
+                        Designed a UI that guides the user to complete the process.
+                        Built a metal box that secures the letters
+                        Selected and installed sensors to make the box secure for users.
+                    </p>
+                </div>
+                <div class = "proyectos">
+                    <p>
+                        <b class = "tituloproyecto">Automatic guitar tuner</b>
+                        <br>Built a mechanism which takes the tuning keys (one at a time) and rotates them
+                        in the right direction. The control system was programmed in Arduino.                        
+                    </p>
+                    <img src = "images/guitartuner.png">
+                </div><div class = "proyectos">
+                    <img src = "images/vision.png">
+                    <p>
+                        <b class = "tituloproyecto">Robot+Camera</b>
+                        <br>Created a vision system in MATLAB that takes a picture of a plastic figure (via
+                        wireless connection with a smartphone), analyze it, and, according to its shape
+                        and color, tells a robot the place it belongs.
+                    </p>
+                </div>
             </article>
-            <article id="skills">
-                <h2>Skills</h2>
-                <p>
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                </p>
-            </article>
-            <article id="hobbies">
-                <h2>My hobbies</h2>
-                <p> Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                    Et id ea fugiat in qui et veniam dolor Lorem adipisicing nostrud adipisicing 
-                    occaecat laborum. Quis labore enim aute exercitation ad. Proident aliqua Lorem 
-                    nostrud occaecat esse enim ea sint amet. Amet qui est sit consequat proident 
-                    consectetur incididunt ad cupidatat est id. Sint exercitation deserunt tempor 
-                    aliqua anim anim.
-                </p>
-            </article>
+            <footer>
+                <div>
+                    <h2>You can find me here:</h2>
+                </div>
+                <div class="redes">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/kevin-maldonado95/" target="_blank"><img src="./images/linkedin.png" alt="linkedinicon"></a></li>
+                        <li><a href="https://github.com/kevmaldonado95" target="_blank"><img src="./images/github.png" alt="githubnicon"></a></li>
+                        <li><a href="https://trailblazer.me/id/kevomaldonado" target="_blank"><img src="./images/trail.svg" alt="trailicon"></a></li>
+                    </ul>
+                </div>
+            </footer>
         </section>
     </body>
-    <script src = "js/myscript.js"></script>
 </html>
