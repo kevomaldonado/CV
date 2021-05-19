@@ -46,7 +46,7 @@
 }
 .welcoming h2{
     margin-bottom: 20px;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .info, .proyectos, .skills{
     display:flex;
@@ -54,13 +54,19 @@
     align-items: center;
     flex-direction: column;
 }
+.buzon, .vision{
+    flex-direction: column-reverse;
+}
 .skills{
     justify-content: space-around;
     flex-direction: row;
 }
+.skills p{
+    font-size: calc(15px + 0.5vw);
+}
 .info img{
     margin : 20px;
-    width: 350px;
+    width: 300px;
     border-radius: 50%;
 }
 .proyectos img{
@@ -70,16 +76,13 @@
 .info p, .proyectos p{
     margin : 20px;
     width : 85%;
-    font-size: 25px;
-    text-align: justify;
+    font-size: calc(18px + 1vw);
+    text-align:left;
 }
 .proyectos p{
     width : 80%;
 }
 
-.tituloproyecto{
-    font-size: 30px;
-}
 article{
     padding : 10px 15px;
     margin : 5px 3px;
@@ -87,7 +90,7 @@ article{
 h2{
     text-align:center;
     color : #dbe8d4;
-    font-size: 2.5vw;
+    font-size: calc(20px+1.5vw);
 }
 p{
     color : #dbe8d4;
@@ -194,7 +197,7 @@ footer{
     display:block;
 }
 footer h2{
-    font-size: 1.5vw;
+    font-size: 12px;
     padding-top:10px;
 }
 .redes ul{
@@ -226,5 +229,11 @@ footer h2{
     }
     .info p, .proyectos p{
         width : 50%;
+    }
+    .welcoming h2{
+        font-size: 3vw;
+    }
+    .info img{
+        width: 350px;
     }
 }
